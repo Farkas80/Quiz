@@ -31,6 +31,14 @@
   padding: 1.5rem;
 }
 
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: red;
+}
+
 :root {
   background-color: #ecf5ff;
   font-size: 62.5%;
