@@ -39,6 +39,24 @@
   background-color: red;
 }
 
+/*HUD*/
+#hud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
 :root {
   background-color: #ecf5ff;
   font-size: 62.5%;
