@@ -1,7 +1,8 @@
 @import 'game';
+@import 'config';
 
 :root {
-    background-color: #ecf5ff;
+    background-color: $back-color;
     font-size: 62.5%;
 }
 
@@ -22,7 +23,7 @@ h4 {
 
 h1 {
     font-size: 5.4rem;
-    color: #56a5eb;
+    color: $primary-color;
     margin-bottom: 5rem;
 }
 
