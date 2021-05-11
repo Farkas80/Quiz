@@ -1,2 +1,14 @@
+/*COLORS*/
+
 $back-color: #ecf5ff;
 $primary-color: #56a5eb;
+
+/*MIXINS*/
+
+@mixin boxShadow-choiceContainer {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+};
+
+@mixin border-choiceContainer {
+    border: 0.1rem solid rgba(86, 165, 235, 0.2);
+}

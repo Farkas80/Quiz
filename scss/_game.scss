@@ -1,13 +1,15 @@
+@import 'config';
+
 .choice-container {
+    @include boxShadow-choiceContainer;
     display: flex;
     margin-bottom: 0.5rem;
     width: 100%;
-    font-size: 1.8rem;
-    border: 0.1rem solid rgba(86, 165, 235, 0.2);
+    font-size: 1.8rem;    
     background-color: white;
     &:hover {
-        cursor: pointer;
-        box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+        @include border-choiceContainer;
+        cursor: pointer;        
         transform: translateY(-0.1rem);
         transition: transform 150ms;
     }
