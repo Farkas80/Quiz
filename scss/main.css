@@ -59,6 +59,19 @@
   text-align: center;
 }
 
+/*PROGRESS BAR*/
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #56a5eb;
+}
+
+#progressBarFull {
+  width: 0%;
+  height: 3.4rem;
+  background-color: #56a5eb;
+}
+
 /*COLORS*/
 /*MIXINS*/
 :root {

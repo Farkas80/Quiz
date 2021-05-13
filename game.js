@@ -1,5 +1,8 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
+const progressText = document.getElementById('progressText');
+const scoreText = document.getElementById('score');
+const progressBarFull = document.getElementById('progressBarFull');
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -50,7 +53,12 @@ getNewQuestion = () => {
         return window.location.assign('/end.html');
     }
     questionCounter++;
-    questionCounter.innerText = `${questionCounter}/${max_questions}`;
+    progressText.innerText = `Question ${questionCounter}/${max_questions}`;
+
+    //Update ProgressBar
+
+    progressBarFull.style.width = `${(questionCounter / max_questions) * 100}%`;
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
